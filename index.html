@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Play with me</title>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/estilospersonalizados.css" />
+        <style>
+            html, body, pre, code, kbd, samp {
+                font-family: "Press start 2p";
+            }
+          </style>
+    </head>
+    <body>
+        <div id="music">
+            <audio id="audio" muted>
+                <source src="music/caretaker.mp3" type="audio/mp3">
+            </audio>
+    
+            <button id="unmuteButton" class="nes-btn is-success">PLAY!</button>
+        </div>          
+        <div class="nes-container with-title is-centered" id="centrado">
+            <p class="title">Choose your path.</p>
+            <label>
+                <input type="radio" class="nes-radio" name="answer" id="mario"/>
+                <span><i class="nes-mario"></i></span>
+            </label>
+            
+            <label>
+                <input type="radio" class="nes-radio" name="answer" id="pokemon"/>
+                <span><i class="nes-pokeball"></i></span>
+            </label>
+
+            <label>
+                <input type="radio" class="nes-radio" name="answer" id="kirby"/>
+                <span><i class="nes-kirby"></i></span>
+            </label>
+            <br><br>
+            <button type="button" class="nes-btn is-success" onclick="choose()">Juegue</button>
+        </div>
+
+        <!-- Mi script -->
+        <script type="text/javascript">
+        
+           function choose(){
+
+            let mario = document.getElementById("mario");
+            let pokemon = document.getElementById("pokemon");
+            let kirby = document.getElementById("kirby");
+
+            if(mario.checked){
+
+                mario = location.href="html/mario.html";
+
+            }
+            else if(pokemon.checked){
+
+                location.href="html/pokemon.html";
+
+            }
+
+            else if(kirby.checked){
+
+                location.href="html/kirby.html";
+
+            }
+
+
+           }
+
+            unmuteButton.addEventListener('click', function() {
+
+                var audio = document.getElementById("audio");
+
+                audio.muted = false;
+
+                audio.loop = true;
+
+                audio.play();
+
+            })           
+           
+        </script>
+    </body>
+</html>

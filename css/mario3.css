@@ -1,0 +1,18 @@
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url(../img/bg_mario_bros2.png) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+.is-dark{
+    background-color: black !important;
+}
+
+.nes-container.is-dark.with-title > .title{
+    background-color: black !important;
+}
+
+.nes-select.is-dark select{
+    background-color: black;
+}

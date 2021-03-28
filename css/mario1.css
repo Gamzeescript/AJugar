@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: url(../img/bg_mario_bros.jpg) no-repeat center center fixed;
+    background-size: 100% 100%;
+}
+
+#centrado { 
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    background-image: url("../img/block1.png");
+    background-repeat:repeat;   
+}
+
+.title{
+    background-color: #EB7B12 !important;
+}
+
+.mario{
+    position: fixed;
+    bottom: 4%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);   
+}

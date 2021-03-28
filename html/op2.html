@@ -1,0 +1,57 @@
+  
+<DOCTYPE! html>
+    <html>
+        <head>
+            <title>Mario 2</title>
+            <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+            <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+            <link rel="stylesheet" href="../css/mario3.css"/>
+            <script type="text/javascript" src="../js/ejercicio6.js"></script>
+        </head>
+        <body>
+            <div id="music">
+                <audio loop autoplay>
+                    <source src="../music/Castle_Theme.mp3" type="audio/mp3">
+                </audio> 
+            </div>            
+            <div class="nes-container is-rounded with-title is-centered is-dark container">
+                <p class="title">Asignaci&oacute;n de sueldo por d&iacute;a</p>
+                    <br><br>
+                    <label for="day">Escoje un d&iacute;a de la semana:</label>
+                    <div class="nes-select is-dark">
+                    <select id="day" name="day">
+                        <option disabled selected hidden>-- Selecciona una opci&oacute;n --</option>
+                        <option id="lunes" name="lunes" value="lunes">lunes</option>
+                        <option id="martes" name="martes" value="martes">martes</option>
+                        <option id="miercoles" name="miercoles" value="miercoles">miercoles</option>
+                        <option id="jueves" name="jueves" value="jueves">jueves</option>
+                        <option id="viernes" name="viernes" value="viernes">viernes</option>
+                        <option id="sabado" name="sabado" value="sabado">sabado</option>
+                        <option id="domingo" name="domingo" value="domingo">domingo</option>
+                    </select>
+                    </div>
+                    <br><br>
+                    <button class="nes-btn" onclick="escogedia()">Enviar</button>
+                    <br><br>
+                    <div id="result">
+                    <label>Este d&iacute;a se paga: </label>
+                    <h3 id="pagodia"></h3>
+                    <br><br>
+                    <h4><a href="mario.html">Volver</a></h4>
+                    </div>
+           </div>
+
+        <!-- Alert dialog 1-->
+        <section>
+            <dialog class="nes-dialog is-rounded" id="dialog1">
+                <form method="dialog">
+                <p class="title">Dia Imaginario</p>
+                <p>Lo siento, ese dia no existe!</p>
+                <menu class="dialog-menu">
+                    <button class="nes-btn is-primary" id="btnconfirm1">Confirm</button>
+                </menu>
+                </form>
+            </dialog>
+            </section>           
+        </body>
+    </html>

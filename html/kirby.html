@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Welcome to DreamLand</title>
+        <link rel="stylesheet" href="../css/centrado.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <style>
+            html, body, pre, code, kbd, samp {
+                font-family: "Press start 2p";
+                background-color: #db4f90;
+                color: #4fc8db;
+            }
+          </style>
+    </head>
+    <body>
+        <div id="music">
+            <audio loop autoplay>
+                <source src="../music/rockstar.mp3" type="audio/mp3">
+            </audio> 
+        </div>  
+        <div class="form">       
+            <form id="form">
+                <div class="nes-container">
+                <label class="nes-text is-primary">Entra a Dreamland</label>
+                <br><br>
+                <label for="name" class="nes-text is-warning">Tu nombre:</label>
+                <input type="text" id="username" class="nes-input" required>
+                <label for="clave" class="nes-text is-warning">Tu clave:</label>
+                <input type="password" id="password" class="nes-input" required>
+                <button type="submit" class="nes-btn is-warning">Entrar</button>
+                </div>
+            </form>
+    </div>
+    <script src="../js/login.js"></script>
+    </body>
+</html>

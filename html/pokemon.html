@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pokemon</title>
+        <link rel="stylesheet" href="../css/centrado.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <style>
+            html, body, pre, code, kbd, samp {
+                font-family: "Press start 2p";
+                background-image: url("../img/primer.png");
+                color: #4fc8db;
+            }
+          </style>
+    </head>
+    <body>
+        <div id="music">
+            <audio loop autoplay>
+                <source src="../music/puchamon.mp3" type="audio/mp3">
+            </audio> 
+        </div>  
+        <div class="nes-container with-title is-centered" id="centrado">
+            <label>
+                <input type="radio" class="nes-radio" name="answer" id="charmander"/>
+                <span><i class="nes-charmander"></i></span>
+            </label>
+            
+            <label>
+                <input type="radio" class="nes-radio" name="answer" id="squirtle"/>
+                <span><i class="nes-squirtle"></i></span>
+            </label>
+
+            <label>
+                <input type="radio" class="nes-radio" name="answer" id="bulbasaur"/>
+                <span><i class="nes-bulbasaur"></i></span>
+            </label>
+            <br><br>
+            <button type="button" class="nes-btn is-success" onclick="choose()">Pocket Monster!</button>
+            <br><br>
+            <a href="../index.html">Fin?</a>
+        </div>
+     <!-- Mi script -->
+     <script type="text/javascript">
+        
+        function choose(){
+
+         let charmander = document.getElementById("charmander");
+         let squirtle = document.getElementById("squirtle");
+         let bulbasaur = document.getElementById("bulbasaur");
+
+         if(charmander.checked){
+
+            location.href="../html/charmander.html";
+
+         }
+         else if(squirtle.checked){
+
+             location.href="../html/squirtle.html";
+
+         }
+
+         else if(bulbasaur.checked){
+
+             location.href="../html/bulbasaur.html";
+
+         }
+
+
+        }
+    </script>
+    </body>
+</html>

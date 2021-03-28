@@ -1,0 +1,71 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>Mario 1</title>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../css/mario2.css"/>
+        <script type="text/javascript" src="../js/ejercicio5.js"></script>
+    </head>
+    <body>
+        <div id="music">
+            <audio loop autoplay>
+                <source src="../music/Sky_Theme.mp3" type="audio/mp3">
+            </audio> 
+        </div>       
+        <div class="nes-container is-rounded with-title is-centered container">
+            <p class="title">Calculo de impuesto</p>
+            <label>Ingrese su sueldo:</label>
+            <input class="nes-input" type="number" id="sueldo" name="sueldo"/>
+            <br><br>
+            <button class="nes-btn" onclick="impuesto()">Calcular</button>
+            <br><br>
+            <div id="result">
+                <label>Su sueldo original es: <h3 id="sueldo_neto"></h3></label>
+                <label>Su impuesto calculado es: <h3 id="imp"></h3></label>
+                <label>Su sueldo final es: <h3 id="sueldo_final"></h3></label>
+                <br><br>
+                <h4><a href="mario.html">Volver</a></h4>
+            </div>
+        </div>
+
+        <!-- Alert dialog 1-->
+        <section>
+        <dialog class="nes-dialog is-rounded" id="dialog1">
+            <form method="dialog">
+            <p class="title">Impuesto Aplicado</p>
+            <p>Aplicas a un descuento del 5%</p>
+            <menu class="dialog-menu">
+                <button class="nes-btn is-primary" id="btnconfirm1">Confirm</button>
+            </menu>
+            </form>
+        </dialog>
+        </section>
+        
+        <!-- Alert dialog 2-->
+        <section>
+        <dialog class="nes-dialog is-rounded" id="dialog2">
+            <form method="dialog">
+            <p class="title">Impuesto Aplicado</p>
+            <p>Aplicas a un descuento del 10%</p>
+            <menu class="dialog-menu">
+                <button class="nes-btn is-primary" id="btnconfirm2">Confirm</button>
+            </menu>
+            </form>
+        </dialog>
+        </section>
+        
+        <!-- Alert dialog 3-->
+        <section>
+        <dialog class="nes-dialog is-rounded" id="dialog3">
+            <form method="dialog">
+            <p class="title">Impuesto Aplicado</p>
+            <p>Aplicas a un descuento del 15%</p>
+            <menu class="dialog-menu">
+                <button class="nes-btn is-primary" id="btnconfirm3">Confirm</button>
+            </menu>
+            </form>
+        </dialog>
+        </section>          
+    </body>
+</html>

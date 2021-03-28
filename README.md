@@ -1,2 +1,2 @@
 # AJugar
-repositorio del proyecto usando Nes CSS
+No es la gran vaina pero ahi esta
